@@ -1,0 +1,156 @@
+body{
+	background-image: linear-gradient(rgba(25,25,25,.5), rgba(25,25,25,.5)),url(rauwfondo.png);
+	background-size: 100px;
+	background-position:center;
+	font-family: sans-serif;
+	margin: 0;
+}
+header{
+	display: flex;
+	height: 70px;
+	justify-content: space-between;
+	background-color: black;
+	align-items: center;
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 80px;
+	weight:80px;
+	margin-right: 10px;
+}
+#h2head{
+	display: flex;
+}
+nav a{
+	font-weight: 600;
+	padding-right: 10px;
+}
+nav a:hover{
+	color:gray;
+}
+section{
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+section img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.botondiv{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(25%,-50%);
+}
+.botondivp{
+	text-align: center;
+}
+i{
+	text-align: right;
+	font-size: 25px;
+	color: white;
+	margin: 20px;
+	border-radius: 50%;
+	padding: 15px;
+	box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+	transition: 0.3s ease;
+}
+.fa-youtube:hover{
+	background-color: red;
+	color: white;
+	box-shadow: 0 0 15px red,
+				0 0 45px red,
+				0 0 75px red,
+				0 0 115px red;
+}
+.fa-twitter:hover{
+	background-color: #1DA1F2;
+	color: white;
+	box-shadow: 0 0 15px #1DA1F2,
+				0 0 45px #1DA1F2,
+				0 0 75px #1DA1F2,
+				0 0 115px #1DA1F2;
+}
+.fa-spotify:hover{
+	background-color: #1DB954;
+	color: white;
+	box-shadow: 0 0 15px #1DB954,
+				0 0 45px #1DB954,
+				0 0 75px #1DB954,
+				0 0 115px #1DB954;
+}
+.fa-instagram:hover{
+	background-color: #FF3E00;
+	color: white;
+	box-shadow: 0 0 15px #FF3E00,
+				0 0 45px #FF3E00,
+				0 0 75px #FF3E00,
+				0 0 115px #FF3E00;
+}
+.slider{
+	width: 75vw;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+.slider .slide-track{
+	display: flex;
+	animation: scroll 40s linear infinite;
+	-webkit-animation:scroll 40s linear infinite;
+	width: calc(200px * 14);
+}
+.slider .slide{
+	width: 200px;
+}
+.slider .slide img{
+	width: 100%;
+
+}
+@keyframes scroll{
+	0%{
+		-webkit-transform:translateX(0);
+		transform: translateX(0);
+	}
+	100%{
+		-webkit-transform:translateX(calc(-200px* 7));
+		transform: translateX(calc(-200px*7));
+	}
+}
+.clase1{
+	text-align:center;
+}
+pre, p{
+	font-size:15px;
+}
+table{
+	margin:auto;
+}
+.links{
+	color:white;
+}
+.imagen{
+	transition:0.5s;
+	object-fit: cover;
+}
+img:hover{
+	transform: scale(1.05);
+}
