@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="centralcss.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="rauwwall1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="rauwwall2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="rauwwall3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="rauwwall4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="rauwwall5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="rauwwall6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="rauwwall7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="rauwwall8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="rauwwall9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="rauwwall10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="EL ZORRO">
+                EL ZORRO
+            </h1>
+            <div class="author">
+                <h2>YISUS</h2>
+                <p><b>Galeria</b></p>
+                <p>
+                    Disfrute de las mejores fotos de Rauw
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="galeria">
+        <div class="galeriacaja">
+            <div class="heading">
+                <h3>Galeria <span>de fotos</span></h3>
+            </div>
+            <div class="caja">
+                <div class="fotos">
+                    <img src="rauwwall1.jpg">
+                    <img src="rauwwall2.jpg">
+                    <img src="rauwwall3.jpg">
+                    <img src="rauwwall4.jpg">
+                    <img src="rauwwall5.jpg">
+                </div>
+                <div class="fotos">
+                    <img src="rauwwall6.jpg">
+                    <img src="rauwwall7.jpg">
+                    <img src="rauwwall8.jpg">
+                    <img src="rauwwall9.jpg">
+                    <img src="rauwwall10.jpg">
+                </div>
+                <div class="fotos">
+                    <img src="rauwwall11.jpg">
+                    <img src="rauwwall12.jpg">
+                    <img src="rauwwall13.jpg">
+                    <img src="rauwwall14.jpg">
+                    <img src="rauwwall15.jpg">
+                </div>
+            </div>
+            <div class="boton">
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
